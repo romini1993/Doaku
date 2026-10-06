@@ -1,0 +1,15 @@
+{
+  "name": "Doa untuk Bapak",
+  "short_name": "Doa Bapak",
+  "description": "Tawasul, Tahlil, Yasin dan Doa untuk almarhum",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0c0a09",
+  "theme_color": "#0c0a09",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

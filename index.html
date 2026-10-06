@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Doa untuk Bapak</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0c0a09">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Scheherazade+New:wght@400;600&display=swap" rel="stylesheet">
+<script>
+  // Terapkan tema sebelum render (anti-flash)
+  (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+  if(t==='dark')document.documentElement.classList.add('dark');})();
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','system-ui','sans-serif'],ar:['"Scheherazade New"','serif']}}}}</script>
+<style type="text/tailwindcss">
+  @layer components{
+    .card{@apply rounded-2xl border border-stone-200 bg-white p-5 shadow-sm dark:border-stone-800 dark:bg-stone-900 scroll-mt-20}
+    .ttl{@apply mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-700 dark:text-emerald-400}
+    .lt{@apply mb-3 text-[0.93rem] leading-relaxed text-stone-700 dark:text-stone-300}
+    .hl{@apply font-semibold text-emerald-700 dark:text-emerald-400}
+    .cnt{@apply ml-1 inline-flex min-w-[3.4rem] select-none items-center justify-center rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white shadow active:scale-90 transition align-middle}
+    .cnt.done{@apply bg-amber-500}
+    .nav{@apply flex flex-1 flex-col items-center gap-0.5 py-2 text-[0.68rem] font-medium text-stone-500 dark:text-stone-400}
+    .nav.on{@apply text-emerald-600 dark:text-emerald-400}
+    details{@apply rounded-xl border border-stone-200 dark:border-stone-700 mb-2 overflow-hidden}
+    summary{@apply flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-semibold text-amber-700 dark:text-amber-300}
+    summary::-webkit-details-marker{display:none}
+    details[open] summary .chev{@apply rotate-180}
+    .chev{@apply transition-transform}
+    .names{@apply border-t border-stone-200 px-4 py-3 text-sm leading-7 text-stone-700 dark:border-stone-700 dark:text-stone-300}
+  }
+</style>
+</head>
+<body class="bg-stone-50 pb-28 font-sans text-stone-800 antialiased dark:bg-stone-950 dark:text-stone-200">
+
+<header class="sticky top-0 z-40 border-b border-stone-200 bg-white/85 backdrop-blur dark:border-stone-800 dark:bg-stone-950/85" style="padding-top:env(safe-area-inset-top)">
+  <div class="mx-auto flex max-w-xl items-center justify-between px-4 py-3">
+    <div>
+      <p class="text-[0.65rem] uppercase tracking-[0.25em] text-stone-500">Tawasul · Tahlil · Doa</p>
+      <h1 class="text-base font-bold">Doa untuk Bapak</h1>
+    </div>
+    <button id="themeBtn" aria-label="Ganti tema" class="rounded-full border border-stone-300 p-2 dark:border-stone-700">
+      <svg class="hidden h-5 w-5 dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="h-5 w-5 dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-xl space-y-4 px-4 py-4">
+
+  <section class="card text-center">
+    <p class="font-ar text-4xl leading-loose" dir="rtl">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+    <p class="lt mb-1">ASTAGFIRULLAHALADZIM (3X) <button class="cnt" data-t="3">0/3</button></p>
+    <p class="lt mb-1">ALAZILAILAHAILA HUWALHAYULQOYUM WAATUBU ILAIHI</p>
+    <p class="lt mb-0">ASHADU ALA ILAHA ILALLAH WAASYHADU ANNA MUHAMMADAR RASULULLAH</p>
+  </section>
+
+  <section id="tawasul" class="card">
+    <h2 class="ttl">① Hadiah (Tawasul)</h2>
+    <p class="lt">1. ILA HADROTIN NABIYYIL MUSTHOFA MUHAMMADIN SHALLALLAHU 'ALAIHI WASALLAM, WA 'ALA ALIHI WA AZWAJIHI WA DZURRIYYATIHI WA AHLI BAITIHI KIROMI, SYAI’UN LILLAHI LAHUMUL <span class="hl">FAATIHAH...</span></p>
+    <p class="lt">2. WA ILA ARWAHI ABA-IHI WA IKHWANIHI MINAL AMBIYA-I WAL MURSALIN, WA ALI KULLIN MINHUM WASH-SHOHABATI AJMA'IN, KHUSHUSHON AL-KHULAFA-IR ROSYIDIN, SADATINA ABI BAKRIN WA 'UMARO WA 'UTSMANA WA 'ALIYYIN RODIALLAHU 'ANHUM, SYAI’UN LILLAHI LAHUMUL <span class="hl">FAATIHAH...</span></p>
+    <p class="lt">3. TSUMMA ILA ARWAHI SYAIKHINA SYAIKH MUHYIDDIN ABDUL QODIR AL-JAILANI, SHOHIBIL BAGHDAD, QODDASALLAHU SIRROHUN NURONI, SYAI’UN LILLAHI LAHUMUL <span class="hl">FAATIHAH...</span></p>
+    <p class="lt">4. TSUMMA ILA ARWAHI AHLIL KUBUR KHUSHUSHON (ALMARHUM &amp; ALMARHUMMAH):</p>
+
+    <details>
+      <summary>Keluarga Bapak <svg class="chev h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="names">EMAD BIN ATA<br>MUNAH BINTI ATA<br>ATA BIN SINAN<br>SATI BINTI SAIN<br>APRAK BIN WIRI<br>SAIN BIN DULOH<br>LAISAH BINTI LIUN<br>ENCEP BIN JANIM<br>MANI BINTI SINAN<br>KANDI BIN ATA<br>ENCIM BIN JANIM<br>AMUNG BIN SINAN<br>SINAN BIN EJEN<br>SIAH BINTI SINAN<br>UDIK BIN SINAN<br>DACEM BINTI SINAN<br>AMIT BIN SINAN<br>SAMAH BINTI SINAN</div>
+    </details>
+    <details>
+      <summary>Keluarga Ibu <svg class="chev h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="names">MINING BIN GADEL<br>DASI BINTI MIUN<br>DACING BIN MINING<br>GADEL BIN PULAN<br>INI BINTI PULAN<br>MIUN BIN PULAN<br>BENIL BINTI PULAN<br>CEKIT BIN MIUN<br>BENIN BIN MIUN<br>LEOK BIN MIUN<br>INENG BIN GADEL<br>BOIN BIN GADEL<br>KARTINAH BINTI RAMIN</div>
+    </details>
+    <details>
+      <summary>Keluarga Weni <svg class="chev h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <div class="names">PATIMAH BINTI ENGKIB<br>JAKA BIN SAMAI<br>SAMSUDIN BIN SAPEI<br>PATONAH BINTI JAKA<br>MIFTAH BIN JAKA<br>HAPIDIN BIN DINDIN<br>SITI LAYANAH BINTI SOLIHIN<br>IMAS BINTI PIDIN</div>
+    </details>
+
+    <p class="lt mt-4 mb-0">ABA-INA WA UMMAHATINA WA JADDINA WA JADDATINA WA AKHWALINA WA JAMI’IL MUSLIMINA WAL MUSLIMAT, WAL MU’MININA WAL MU’MINAT, AL-AHYA-I MINHUM WAL AMWAT, MIN MASYARIQIL ARDHI ILA MAGHORIBIHA, SYAI’UN LILLAHI LAHUMUL <span class="hl">FAATIHAH...</span></p>
+  </section>
+
+  <section id="tahlil" class="card">
+    <h2 class="ttl">② Tahlil &amp; Surah Pendek</h2>
+    <p class="lt">LAILLAHAILLAH HU ALLAHU AKBAR<br>(BISMILLAH... AL-IKHLAS 3X) <button class="cnt" data-t="3">0/3</button></p>
+    <p class="lt">LAILLAHAILLAH HU ALLAHU AKBAR<br>(BISMILLAH... AL-FALAQ 1X)</p>
+    <p class="lt">LAILLAHAILLAH HU ALLAHU AKBAR<br>(BISMILLAH... AN-NASS 1X)</p>
+    <p class="lt">LAILLAHAILLAH HU ALLAHU AKBAR<br>(BISMILLAH... ALFATIHAH)</p>
+    <hr class="my-4 border-stone-200 dark:border-stone-800">
+    <p class="lt">BISMILLAH...<br>ALIF LAAM MIIM. DZALIKAL KITABU LAA ROIBA FIIHI HUDAL LIL MUTTAQIIN. ALLADZIINA YU'MINUUNA BIL GHOIBI WA YUQIIMUUNASH SHOLAATA WA MIMMAA ROZAQNAAHUM YUNFIQUUN. WALLADZIINA YU'MINUUNA BIMAA UNZILA ILAIKA WA MAA UNZILA MIN QOBLIK, WA BIL AKHIROTI HUM YUUQINUUN. ULAA-IKA 'ALAA HUDAM MIR ROBBIHIM WA ULAA-IKA HUMUL MUFLIHUUN.<br>WA ILAAHUKUM ILAAHUW WAAHIDUN LAA ILAAHA ILLAA HUWAR ROHMAANUR ROHIIM.</p>
+    <p class="lt">ALLAAHU LAA ILAAHA ILLAA HUWAL HAYYUL QOYYUUM, LAA TA’KHUDZUHUU SINATUW WALAA NAUUM, LAHUU MAA FIS SAMAAWAATI WA MAA FIL ARDH, MAN DZALLADZII YASYFA’U ‘INDAHUU ILLAA BI IDZNIH, YA’LAMU MAA BAINA AIDIIHIM WA MAA KHOLFAHUM, WALAA YUHIITHUUNA BI SYAI-IM MIN ‘ILMIHII ILLAA BIMAA SYAA-A, WASI’A KURSIYYUHUS SAMAAWAATI WAL ARDH, WALAA YA-UUDUHUU HIFZHUHUMAA WAHUWAL ‘ALIYYUL ‘ADZHIIM.</p>
+    <hr class="my-4 border-stone-200 dark:border-stone-800">
+    <p class="lt">ASTAGFIRULLAHALADZIM (3X) <button class="cnt" data-t="3">0/3</button><br>AFDHALUDZ-DZIKRI FA’LAM ANNAHUU....<br>LAA ILAAHA ILLALLAAH, HAYYUM MAUJUUD….<br>LAA ILAAHA ILLALLAAH, HAYYUM MA’BUUD.…<br>LAA ILAAHA ILLALLAAH, HAYYUM BAAQ ….<br>LAA ILAAHA ILLALLAAH 13X <button class="cnt" data-t="13">0/13</button><br>LAA ILAAHA ILLALLAAH MUHAMMADUR ROSUULULLAAH SHALLALLAAHU ‘ALAIHI WASALLAM.<br>INNALLAAHA WA MALAA-IKATAHUU YUSHALLUUNA ‘ALAN-NABIY, YAA AYYUHAL-LADZIINA AAMANUU SHALLUU ‘ALAIHI WA SALLIMUU TASLIIMAA. | <span class="hl">ALFATIHAH...</span></p>
+  </section>
+
+  <section id="yasin" class="card scroll-mt-20">
+    <h2 class="ttl">③ Surat Yasin</h2>
+    <button id="yasinBtn" class="w-full rounded-xl bg-emerald-600 py-3 text-sm font-semibold text-white shadow active:scale-[0.98]">Buka Surat Yasin (Arab &amp; Latin)</button>
+    <div id="yasinBox" class="mt-4 hidden">
+      <div id="yasinList"></div>
+      <p class="py-4 text-center text-xs font-semibold text-emerald-700 dark:text-emerald-400">Selesai Yasin, lanjut Doa Penutup.</p>
+    </div>
+  </section>
+
+  <section id="doa" class="card">
+    <h2 class="ttl">④ Doa Penutupan</h2>
+    <p class="lt">ALHAMDULILLAHI RABBIL 'ALAMIN</p>
+    <div class="mb-4 rounded-xl border-l-4 border-emerald-600 bg-emerald-50 p-4 text-sm italic leading-relaxed text-stone-700 dark:bg-emerald-950/40 dark:text-stone-300">
+      MUDAH MUDAHAN NGAOSAN HADIAH SARENG YASIN IYEU DI TAMPI KU ALLAH SWT.<br>SARENG MUDAH MUDAHAN ALMARHUM SARENG ALMARHUMAH KHUSUNA ALMARHUM BAPAK EMAD BIN ATA<br>UMUMNA KA KAUM MUSLIMIN WAL MUSLIMAT WAL MUKMININ WALMUKMINAT.<br><br>
+      MUDAH MUDAHAN ALMARHUM DI TAMPI IMAN ISLAMNA, DIHAPUSKEN SAGALA DOSA-DOSANA, DIHAPUNTEN TINA SAGALA KALEPATAN SARENG KHILAFNA, DILIPAT GANDAKEUN PAHALANA, DI CAANGKEN SARENG DI LEGA KEUN DI ALAM KUBURNA, SARENG MUDAH MUDAHAN DI TEMPATKEN DI SYURGA NA ALLAH NU PANGSAENA.<br><br>
+      ATUH URANG NU NGAOSANA MUDAH-MUDAHAN JADI AMAL KASAEAN, NAON-NAON NU DI PIKAHAYANG MUDAH-MUDAHAN TIASA KA KOBUL SARENG MUDAH-MUDAHAN DIPASIHAN KABERKAHAN, KASALAMETAN SARENG DI MUDAHKEUN KANA REZEKINA NU BAROKAH, AMIN YA ROBBAL ALAMIN.
+    </div>
+    <p class="lt">A'UDZU BILLAHI MINASH-SHAITHANIR RAJIM<br>BISMILLAHIR RAHMANIR RAHIM</p>
+    <p class="lt">ASYHADU ALLA ILAHA ILLALLAH WA ASYHADU ANNA MUHAMMADAR RASULULLAH<br>ALLAHUMMAJ'ALNI MINAT-TAWWABINA WAJ'ALNI MINAL-MUTATHOHHIRINA WAJ'ALNI MIN 'IBADIKASH-SHOLIHIN</p>
+    <hr class="my-4 border-stone-200 dark:border-stone-800">
+    <p class="lt">ALLAHUMMAGHFIRLANA YA GHAFUR (3X) <button class="cnt" data-t="3">0/3</button></p>
+    <p class="lt">ALLAHUMMAGHFIRLANA DZUNUBANA WALIWALIDAYYA<br>WARHAMHUMA KAMA RABBAYANI SHOGHIRA</p>
+    <p class="lt">ALLAHUMMAGHFIR LAHU WARHAMHU WA 'AFIHI WA'FU 'ANHU<br>ALLAHUMMAJ'AL QABRAHU RAUDHATAN MIN RIYADHIL JINAN<br>ALLAHUMMA ANZILIR-RAHMATA WA MAGHFIRATA 'ALA AHLIL QUBUUR</p>
+    <hr class="my-4 border-stone-200 dark:border-stone-800">
+    <p class="lt">ALLAHUMMA INNA NAS-ALUKA SALAMATAN FID-DIN,<br>WA 'AFIYATAN FIL-JASADI,<br>WA ZIYADATAN FIL-'ILMI,<br>WA BARAKATAN FIR-RIZQI,<br>WA TAUBATAN QABLAL-MAUT,<br>WA RAHMATAN 'INDAL-MAUT,<br>WA MAGHFIRATAN BA'DAL-MAUT.</p>
+    <p class="lt">ALLAHUMMA HAWWIN 'ALAINA FI SAKARATIL-MAUT,<br>WAN-NAJATA MINAN-NARI WAL-'AFWA 'INDAL-HISAB.<br>RABBANA LA TUZIGH QULUBANA BA'DA IDZ HADAITANA WAHAB LANA MIL-LADUNKA RAHMATAN INNAKA ANTAL-WAHHAB.</p>
+    <p class="lt mb-0">RABBANA ATINA FID-DUNYA HASANAH,<br>WA FIL-AKHIRATI HASANAH WA QINA 'ADZABAN-NAR.<br>SUBHANA RABBIKA RABBIL-'IZZATI 'AMMA YASHIFUN,<br>WA SALAMUN 'ALAL-MURSALIN WAL-HAMDU LILLAHI RABBIL-'ALAMIN.<br><span class="hl">AL-FATIHAH</span></p>
+  </section>
+
+  <p class="px-4 py-4 text-center text-xs text-stone-500">Dibuat dengan tulus untuk Almarhum Bapak Emad bin Ata &amp; Keluarga</p>
+</main>
+
+<!-- Auto-scroll -->
+<button id="scrollBtn" class="fixed right-4 z-40 flex h-12 min-w-[3rem] items-center justify-center rounded-full bg-emerald-600 px-3 text-sm font-bold text-white shadow-lg active:scale-90" style="bottom:calc(env(safe-area-inset-bottom) + 5.2rem)" aria-label="Auto scroll">▶</button>
+
+<!-- Bottom nav -->
+<nav class="fixed inset-x-0 bottom-0 z-40 border-t border-stone-200 bg-white/90 backdrop-blur dark:border-stone-800 dark:bg-stone-950/90" style="padding-bottom:env(safe-area-inset-bottom)">
+  <div class="mx-auto flex max-w-xl">
+    <a href="#tawasul" class="nav"><span class="text-lg">🤲</span>Tawasul</a>
+    <a href="#tahlil" class="nav"><span class="text-lg">📿</span>Tahlil</a>
+    <a href="#yasin" class="nav"><span class="text-lg">📖</span>Yasin</a>
+    <a href="#doa" class="nav"><span class="text-lg">🌙</span>Doa</a>
+  </div>
+</nav>
+
+<script src="yasin.js"></script>
+<script>
+(function(){
+  const $=s=>document.querySelector(s), vib=p=>navigator.vibrate&&navigator.vibrate(p);
+
+  // Tema
+  const meta=$('meta[name=theme-color]');
+  const syncMeta=()=>meta.content=document.documentElement.classList.contains('dark')?'#0c0a09':'#fafaf9';
+  syncMeta();
+  $('#themeBtn').onclick=()=>{const d=document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme',d?'dark':'light');syncMeta();vib(10)};
+
+  // Counter dzikir (klik = +1, selesai = getar panjang, klik lagi = reset)
+  document.querySelectorAll('.cnt').forEach(b=>{
+    const t=+b.dataset.t;let n=0;
+    b.onclick=()=>{
+      if(n>=t){n=0;b.classList.remove('done');b.textContent=`0/${t}`;vib(10);return}
+      n++;b.textContent=n>=t?`✓ ${t}/${t}`:`${n}/${t}`;
+      if(n>=t){b.classList.add('done');vib([80,40,120])}else vib(15);
+    };
+  });
+
+  // Yasin
+  const list=$('#yasinList');let built=false;
+  function build(){
+    let html='';
+    yasinData.forEach((it,i)=>{
+      if(i>0&&it.no>0){const p=yasinData[i-1].no;
+        if(p>0&&it.no-p>1)html+=`<div class="my-3 border-y border-dashed border-stone-300 py-3 text-center text-xs text-stone-500 dark:border-stone-700">… Ayat ${p+1} s/d ${it.no-1} dilewati …</div>`}
+      const c=it.no===0;
+      html+=`<div class="border-b border-stone-200 py-4 dark:border-stone-800">
+        ${c?'':`<span class="mb-2 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-600 text-xs font-bold text-white">${it.no}</span>`}
+        <p dir="rtl" class="font-ar text-[2rem] leading-[2.2] text-stone-900 dark:text-stone-100 ${c?'text-center':'text-right'}">${it.ar}</p>
+        <p class="mt-1 text-sm italic leading-relaxed text-amber-700 dark:text-amber-300 ${c?'text-center':''}">${it.lt}</p></div>`;
+    });
+    list.innerHTML=html;built=true;
+  }
+  $('#yasinBtn').onclick=function(){
+    const box=$('#yasinBox');if(!built)build();
+    const open=box.classList.toggle('hidden')===false;
+    this.textContent=open?'Tutup Surat Yasin':'Buka Surat Yasin (Arab & Latin)';vib(10);
+  };
+
+  // Auto-scroll: tap untuk ganti kecepatan (off → 1× → 2× → 3×); berhenti sementara saat disentuh
+  const speeds=[0,25,50,90],lbl=['▶','1×','2×','3×'];let lv=0,paused=false,last=0,acc=0;
+  const sb=$('#scrollBtn');
+  sb.onclick=()=>{lv=(lv+1)%4;sb.textContent=lbl[lv];vib(10);last=0};
+  ['touchstart','wheel','mousedown'].forEach(e=>addEventListener(e,ev=>{if(ev.target!==sb)paused=true},{passive:true}));
+  ['touchend','touchcancel','mouseup'].forEach(e=>addEventListener(e,()=>setTimeout(()=>paused=false,1200),{passive:true}));
+  (function tick(ts){
+    if(lv&&!paused){
+      if(last){acc+=speeds[lv]*(ts-last)/1000;const s=Math.floor(acc);if(s>=1){scrollBy(0,s);acc-=s}}
+      last=ts;
+      if(innerHeight+scrollY>=document.body.scrollHeight-2){lv=0;sb.textContent=lbl[0];vib(30)}
+    }else last=0;
+    requestAnimationFrame(tick);
+  })();
+
+  // Highlight menu aktif
+  const links=[...document.querySelectorAll('.nav')];
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)
+    links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-35% 0px -55% 0px'});
+  ['tawasul','tahlil','yasin','doa'].forEach(id=>io.observe(document.getElementById(id)));
+  document.documentElement.style.scrollBehavior='smooth';
+
+  // Layar tetap menyala
+  let wl=null;const lock=async()=>{try{if('wakeLock' in navigator)wl=await navigator.wakeLock.request('screen')}catch(e){}};
+  lock();document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')lock()});
+
+  // Service worker
+  if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(console.warn));
+})();
+</script>
+</body>
+</html>
